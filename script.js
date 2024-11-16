@@ -4,6 +4,8 @@ const blueTitle = document.createElement("h3");
 const pinkDiv = document.createElement("div");
 const divTitle = document.createElement("h1");
 const divParagraph = document.createElement("p");
+const btn = document.querySelector("#btn");
+const betterBtn = document.querySelector("#better-btn");
 
 redParagraph.style.color = "red";
 redParagraph.textContent = "Hey, I'm red!";
@@ -22,3 +24,9 @@ pinkDiv.appendChild(divParagraph);
 container.appendChild(redParagraph);
 container.appendChild(blueTitle);
 container.appendChild(pinkDiv);
+
+btn.onclick = () => alert("Hello World");
+betterBtn.addEventListener("click", (e) => {
+  alert("Hello World");
+  e.target.style.background = "blue";
+});
